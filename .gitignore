@@ -1,0 +1,8 @@
+#ignore files devices
+/Files
+
+#compile files
+/__pycache__
+
+#pre-commit
+.pre-commit-conf
