@@ -12,7 +12,7 @@ while nextCicle == True:
     numFiles: int = 0
     listMissions = Utils.initDataEmpty()
     flag: bool = False
-    print(listMissions)
+   
     #Validation value input is int
     while flag == False or numFiles > 100:
         try:
@@ -53,8 +53,6 @@ while nextCicle == True:
 
 
             listMissions[mission.name][mission.device_type].append(mission.device_status)
-            print(fileNumber, "\n")
-            print(listMissions)
             fileName: str = Utils.getFileName(codeMission, fileNumber)
             Utils.createSimulation(fileName, mission)
         except Exception as error:
